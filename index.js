@@ -19,6 +19,10 @@ function randomDice() {
     else if (randomNumber2 > randomNumber1) {
         document.querySelector("h1").innerHTML = "Player 2 Wins! Refresh to play again!";
     }
+    
+    setTimeout(function(){
+      document.querySelector("h1").innerHTML = "Refresh page to play again!"
+    }, 1500);
 
 }
 
